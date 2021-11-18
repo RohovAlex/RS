@@ -2,36 +2,14 @@ const fs = require("fs");
 const { pipeline } = require("stream");
 
 const streamsGenerator = require("./modules/streamsGenerator");
+const argumentsProcessor = require("./modules/argumentsProcessor");
+const configProcessor = require("./modules/configProcessor");
 
 const params = process.argv.splice(2);
 
-if (params.length < 2) {
-  process.stderr.write("Config is missed or wrong format");
-  process.exit(1);
-}
+const { config, inputFilename, outputFilename } = argumentsProcessor(params);
 
-const filterC = params.filter((el) => el === "-c");
-const filterI = params.filter((el) => el === "-i");
-const filterO = params.filter((el) => el === "-o");
-
-if (filterC.length > 1) {
-  process.stderr.write("Config consists duplicated option '-c'");
-  process.exit(1);
-}
-if (filterI.length > 1) {
-  process.stderr.write("Config consists duplicated option '-i'");
-  process.exit(1);
-}
-if (filterO.length > 1) {
-  process.stderr.write("Config consists duplicated option '-o'");
-  process.exit(1);
-}
-
-const config = params[1];
-const configArgs = config.split("-");
-
-const inputFilename = params[3];
-const outputFilename = params[5];
+const configArgs = configProcessor(config);
 
 let rs;
 if (inputFilename) {
@@ -50,5 +28,7 @@ if (inputFilename) {
 const streamsArr = streamsGenerator(configArgs);
 
 pipeline(rs, ...streamsArr, ws, (err) => {
-  console.log("Error: ", err);
+  if (err) {
+    console.log("Error: ", err);
+  } else console.log("Pipeline succeeded.");
 });
