@@ -1,15 +1,17 @@
-const shiftLetters = require("../modules/atbashShiftLetters");
+const atbashShiftLetters = require("../modules/atbashShiftLetters");
 
-describe("Function shiftLetters", () => {
+describe("Function atbashShiftLetters", () => {
   test("should not changes symbols not from English alphabet", () => {
-    expect(shiftLetters("123!@#Привет")).toBe("123!@#Привет");
+    expect(atbashShiftLetters("123!@#Привет")).toBe("123!@#Привет");
   });
 
   test("should return string with shifted english letters", () => {
-    expect(shiftLetters("Hello, World!")).toBe("Svool, Dliow!");
+    expect(atbashShiftLetters("Hello, World!")).toBe("Svool, Dliow!");
   });
 
   test("should not change string length", () => {
-    expect(shiftLetters("Hello, World!").length).toBe("Hello, World!".length);
+    expect(atbashShiftLetters("Hello, World!").length).toBe(
+      "Hello, World!".length
+    );
   });
 });

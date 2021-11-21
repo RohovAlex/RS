@@ -4,7 +4,8 @@
   "description": "Rolling Scopes tasks",
   "main": "task1.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
