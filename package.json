@@ -1,0 +1,22 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "Rolling Scopes tasks",
+  "main": "task1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohovAlex/RS.git"
+  },
+  "author": "Rohov Alex <rohov.alex@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohovAlex/RS/issues"
+  },
+  "homepage": "https://github.com/RohovAlex/RS#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
