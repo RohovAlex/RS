@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637512766609" clover="3.2.0">
-  <project timestamp="1637512766609" name="All files">
-    <metrics statements="44" coveredstatements="41" conditionals="28" coveredconditionals="25" methods="6" coveredmethods="6" elements="78" coveredelements="72" complexity="0" loc="44" ncloc="44" packages="1" files="3" classes="3"/>
+<coverage generated="1637519719640" clover="3.2.0">
+  <project timestamp="1637519719641" name="All files">
+    <metrics statements="64" coveredstatements="61" conditionals="46" coveredconditionals="43" methods="13" coveredmethods="13" elements="123" coveredelements="117" complexity="0" loc="64" ncloc="64" packages="1" files="4" classes="4"/>
+    <file name="argumentsProcessor.js" path="C:\Users\Alex\Documents\GitHub\RS\task1\task1\modules\argumentsProcessor.js">
+      <metrics statements="20" coveredstatements="20" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="60" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="60" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="60" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="30" count="2" type="stmt"/>
+      <line num="32" count="2" type="stmt"/>
+    </file>
     <file name="atbashShiftLetters.js" path="C:\Users\Alex\Documents\GitHub\RS\task1\task1\modules\atbashShiftLetters.js">
       <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
@@ -21,15 +44,15 @@
     <file name="configProcessor.js" path="C:\Users\Alex\Documents\GitHub\RS\task1\task1\modules\configProcessor.js">
       <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="2" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="6" count="3" type="stmt"/>
+      <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
     </file>
     <file name="shiftLetters.js" path="C:\Users\Alex\Documents\GitHub\RS\task1\task1\modules\shiftLetters.js">
